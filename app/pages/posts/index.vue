@@ -1,6 +1,6 @@
 <template>
   <section class="container posts-page">
-    <el-card>
+    <el-card style="flex: 1">
       <div
         slot="header"
         class="clearfix">
