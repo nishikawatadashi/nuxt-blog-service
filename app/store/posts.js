@@ -42,7 +42,7 @@ export const actions = {
   async publishPost({ commit }, { payload }) {
     const user = await this.$axios.$get(`/users/${payload.user.id}.json`)
     const post_id = (await this.$axios.$post('/posts.json', payload)).name
-    const created_at = moment().format('YYYY-MM-DD HH:mm:ss')
+    const created_at = moment().format()
     const post = { id: post_id, ...payload, created_at }
     const putData = { id: post_id, ...payload, created_at }
     delete putData.user
