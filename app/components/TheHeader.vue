@@ -8,21 +8,21 @@
       Nuxt Diary App
     </el-menu-item>
     <el-menu-item
-      :router="{ path: '/posts/' }"
+      :route="{ path: '/posts/' }"
       index="2">
       投稿一覧
     </el-menu-item>
 
     <no-ssr>
       <el-menu-item
-        :router="{ path: '/' }"
+        :route="{ path: '/' }"
         index="4"
         style="float: right;">
         <span>ログイン</span>
       </el-menu-item>
     </no-ssr>
     <el-menu-item
-      :router="{ path: '/posts/new' }"
+      :route="{ path: '/posts/new' }"
       index="5"
       style="float: right;">
       新規投稿
