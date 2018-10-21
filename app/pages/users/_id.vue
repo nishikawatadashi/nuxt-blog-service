@@ -33,7 +33,7 @@
             <el-table-column
               prop="created_at"
               label="投稿日時"
-              width="160" />
+              width="180" />
           </el-table>
         </el-card>
       </el-col>
